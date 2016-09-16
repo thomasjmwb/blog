@@ -3,6 +3,6 @@
 * Ruby version:
 Ruby 2.3.1
 
-* Database version:
+* Database:
 SQLite3
 
