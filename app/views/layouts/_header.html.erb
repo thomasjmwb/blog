@@ -1,33 +1,25 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
+<header class="footer">
  
-
- <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-  <div class="flipper">
-    <div class="front">
-
-        <%= link_to image_tag("wave.jpg", :alt => "logo", :size => "480x270") %>
-
-    </div>
-    <div class="back">
-
-    <%= link_to image_tag("name.jpg", :alt => "name", :size => "480x270"), controller: 'welcome'  %>
-
-    </div>
+  <div class="container">
+     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+            <%= link_to image_tag("wave.jpg", :alt => "logo", :size => "480x270") %>
+        </div>
+        <div class="back"
+        <%= link_to image_tag("name.jpg", :alt => "name", :size => "480x270"), controller: 'welcome'  %>
+        </div>
+      </div>
   </div>
-</div>
 
-  
-
-
-
-    <%= link_to "Sign up!", '#', class: "btn btn-lg btn-primary" %>
     <nav>
-      <ul class="nav navbar-nav navbar-right">
+      <ul>
         <li><%= link_to "Blog", controller: 'articles'%></li>
         <li><%= link_to "Help",   '#' %></li>
         <li><%= link_to "Log in", '#' %></li>
       </ul>
     </nav>
   </div>
+
 </header>
+

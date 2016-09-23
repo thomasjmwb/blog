@@ -1,5 +1,6 @@
+@import "bootstrap";
 
-/* Header */
+/* Logo */
 
 /* entire container, keeps perspective */
 .flip-container {
@@ -44,12 +45,37 @@
   transform: rotateY(180deg);
 }
 
+/* Header */
+
+header {
+  margin-top: 45px;
+  padding-top: 5px;
+  color: #777;
+}
+
+header a {
+  color: #000;
+}
+
+header a:hover {
+  color: #222;
+}
+
+header ul {
+  float: right;
+  list-style: none;
+}
+
+header ul li {
+  float: left;
+  margin-left: 15px;
+}
+
 /* Footer */
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
   color: #777;
 }
 
@@ -74,3 +100,6 @@ footer ul li {
   float: left;
   margin-left: 15px;
 }
+
+
+
