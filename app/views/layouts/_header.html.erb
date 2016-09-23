@@ -1,6 +1,4 @@
-<header class="footer">
- 
-  <div class="container">
+<header> 
      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
       <div class="flipper">
         <div class="front">
@@ -9,17 +7,17 @@
         <div class="back"
         <%= link_to image_tag("name.jpg", :alt => "name", :size => "480x270"), controller: 'welcome'  %>
         </div>
+        </div>
       </div>
-  </div>
+    </div>
 
-    <nav>
       <ul>
+        <li><%= link_to "Home", controller: 'welcome' %></li>
         <li><%= link_to "Blog", controller: 'articles'%></li>
-        <li><%= link_to "Help",   '#' %></li>
         <li><%= link_to "Log in", '#' %></li>
       </ul>
-    </nav>
   </div>
+</div>
 
 </header>
 
