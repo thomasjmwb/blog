@@ -11,28 +11,23 @@
 /* Navigation bar */
 
 #navbar-primary .navbar-nav { 
-//  background: #ededed;
   width: 100%;
   text-align: center;
+  margin: 20px;
+  padding: 40px;
   > li {
     display: inline-block;
     float: none;
     > a {
       padding-left: 30px;
       padding-right: 30px;
+      color: #000;
+      font-family: 'Homemade Apple', cursive;
+    }
+    > hover {
+      color: #222;
     }
   }
-}
-
-/* Header */
-
-header a {
-  color: #000;
-  font-family: 'Homemade Apple', cursive;
-}
-
-header a:hover {
-  color: #222;
 }
 
 /* Footer */
@@ -69,14 +64,10 @@ footer ul li {
 
 /* Heading text */
 
-h1 {
+h1, h2, h3 {
   color: #000;
   font-family: 'Homemade Apple', cursive;
-}
-
-h2 {
-  color: #000;
-  font-family: 'Homemade Apple', cursive;
+  text-align: center
 }
 
 /* Body text */
@@ -84,4 +75,15 @@ h2 {
 p {
   color: #000;
   font-family: 'Quicksand', sans-serif;
+  text-align: center
 }
+
+/* Tables */
+
+table {
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+    text-align:left; 
+    margin-left:auto; 
+    margin-right:auto; 
+  }
