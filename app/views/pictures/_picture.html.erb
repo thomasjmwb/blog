@@ -1,6 +1,8 @@
 <p>   
 	<strong><%= picture.title.capitalize %>:</strong>  
-	<%= picture.url.capitalize %>
+	<br>
+	<%= image_tag image_url(picture.url) %>
+	<br>
 	<%= link_to 'Delete Picture', [picture.article, picture],
 		method: :delete,
 		data: { confirm: 'Are you sure?'  }, class: "btn btn-danger btn-sm" %>
