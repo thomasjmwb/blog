@@ -1,12 +1,7 @@
-
-	<p>
-		<strong><%= comment.commenter.capitalize %>:</strong>  
-		'<%= comment.body.capitalize %>'
-	</p>
-	<p>
-		<%= link_to 'Delete Comment', [comment.article, comment],
-						method: :delete,
-						data: { confirm: 'Are you sure?'  } %>
-	</p>
-
-
+<p>   
+	<strong><%= comment.commenter.capitalize %>:</strong>  
+	<%= comment.body.capitalize %>
+	<%= link_to 'Delete Comment', [comment.article, comment],
+		method: :delete,
+		data: { confirm: 'Are you sure?'  }, class: "btn btn-danger btn-sm" %>
+</p>
