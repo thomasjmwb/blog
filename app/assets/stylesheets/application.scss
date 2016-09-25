@@ -2,73 +2,37 @@
 
 /* Logo */
 
-/* entire container, keeps perspective */
-.flip-container {
-  perspective: 1000px;
+.logo:hover
+{
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
 }
-  /* flip the pane when hovered */
-  .flip-container:hover .flipper, .flip-container.hover .flipper {
-    transform: rotateY(180deg);
+
+/* Navigation bar */
+
+#navbar-primary .navbar-nav { 
+//  background: #ededed;
+  width: 100%;
+  text-align: center;
+  > li {
+    display: inline-block;
+    float: none;
+    > a {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
-
-.flip-container, .front, .back {
-  width: 320px;
-  height: 480px;
-}
-
-/* flip speed goes here */
-.flipper {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-
-  position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-  backface-visibility: hidden;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* front pane, placed above back */
-.front {
-  z-index: 2;
-  /* for firefox 31 */
-  transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-.back {
-  transform: rotateY(180deg);
 }
 
 /* Header */
 
-header {
-  margin-top: 45px;
-  padding-top: 5px;
-  color: #777;
-}
-
 header a {
   color: #000;
+  font-family: 'Homemade Apple', cursive;
 }
 
 header a:hover {
   color: #222;
-}
-
-header ul {
-  float: right;
-  list-style: none;
-}
-
-header ul li {
-  float: left;
-  margin-left: 15px;
 }
 
 /* Footer */
@@ -80,6 +44,7 @@ footer {
 }
 
 footer a {
+  font-family: 'Quicksand', sans-serif;
   color: #555;
 }
 
@@ -88,6 +53,7 @@ footer a:hover {
 }
 
 footer small {
+  font-family: 'Quicksand', sans-serif;
   float: left;
 }
 
@@ -101,5 +67,21 @@ footer ul li {
   margin-left: 15px;
 }
 
+/* Heading text */
 
+h1 {
+  color: #000;
+  font-family: 'Homemade Apple', cursive;
+}
 
+h2 {
+  color: #000;
+  font-family: 'Homemade Apple', cursive;
+}
+
+/* Body text */
+
+p {
+  color: #000;
+  font-family: 'Quicksand', sans-serif;
+}
