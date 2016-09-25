@@ -1,11 +1,19 @@
 <h1><%= @article.title %></h1><br>
 <p><%= @article.text %></p><br>
 
+<h3> Pictures </h3>
+<p><%= render @article.pictures %></p><br>
+
+
 <h3> Comments </h3>
 <p><%= render @article.comments %></p><br>
 
 <h3>Add a comment </h3>
 <p><%=  render 'comments/form' %></p><br>
+
+<h3>Add a picture</h3>
+<p><%=  render 'pictures/form' %></p><br>
+
 
 <p>
 	<%= link_to 'Edit',edit_article_path(@article), class: "btn btn-primary" %> 

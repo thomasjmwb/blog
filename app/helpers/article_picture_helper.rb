@@ -1,0 +1,2 @@
+module ArticlePictureHelper
+end
