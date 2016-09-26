@@ -1,7 +1,7 @@
 <p>   
 	<strong><%= picture.title.capitalize %>:</strong>  
 	<br>
-	<%= image_tag image_url(picture.url) %>
+	<%= image_tag image_url(picture.url), style: 'height:100%;width:100%;' %>
 	<br>
 	<%= link_to 'Delete Picture', [picture.article, picture],
 		method: :delete,
