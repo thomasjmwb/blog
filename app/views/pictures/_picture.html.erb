@@ -1,9 +1,0 @@
-<p>   
-	<strong><%= picture.title.capitalize %>:</strong><br>
-	<br>
-	<%= image_tag image_url(picture.url), style: 'height:100%;width:100%;' %>
-	<br>
-	<%= link_to 'Delete Picture', [picture.article, picture],
-		method: :delete,
-		data: { confirm: 'Are you sure?'  }, class: "btn btn-danger btn-sm" %>
-</p>
